@@ -4,6 +4,16 @@ I'll be posting here my [Advent of Code 2022](https://adventofcode.com/2022) ans
 
 > :warning: NOT CLEAN CODE & NOT EFICENT CODE. My goal is to code as fast as possible.
 
+Run instructions:
+
+```zsh
+nvm install node
+npm install
+
+# Replace <day> and <part> with numbers
+npx ts-node-dev --respawn ./src/challenges/<day>/<part>/index.ts
+```
+
 ## Results
 
 My username is `mauriciabad`

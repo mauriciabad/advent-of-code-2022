@@ -1,6 +1,6 @@
-const fs = require('fs')
+import { readFileSync } from 'fs'
 
-const input = fs.readFileSync('./input.txt', 'utf8')
+const input = readFileSync('./2/1/input.txt', 'utf8')
 
 const rounds = input.split('\n').filter(Boolean)
 

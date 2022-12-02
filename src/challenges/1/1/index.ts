@@ -1,6 +1,6 @@
-const fs = require('fs')
+import { readFileSync } from 'fs'
 
-const input = fs.readFileSync('./input.txt', 'utf8')
+const input = readFileSync('./1/1/input.txt', 'utf8')
 
 const result = Math.max(...input.split('\n\n').map((a)=> a.split('\n').map((calory)=>Number(calory)).reduce((a, b) => a + b, 0)))
 
