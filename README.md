@@ -21,6 +21,7 @@ My username is `mauriciabad`
 ```txt
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  3   00:21:38  7799      0   00:41:52  9257      0
   2   00:20:05  8243      0   00:25:10  6520      0
   1   00:24:18  8917      0   00:29:50  8546      0
 ```
