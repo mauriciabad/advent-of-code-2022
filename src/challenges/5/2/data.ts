@@ -1,9 +1,8 @@
-export const testData: {
-  input: string;
-  output: string;
-}[] = [
-    {
-      input: `    [D]    
+import { TestData } from "../../../shared"
+
+export const testData: TestData[] = [
+  {
+    input: `    [D]    
 [N] [C]    
 [Z] [M] [P]
  1   2   3 
@@ -12,9 +11,9 @@ move 1 from 2 to 1
 move 3 from 1 to 3
 move 2 from 2 to 1
 move 1 from 1 to 2`,
-      output: "MCD",
-    },
-  ]
+    output: "MCD",
+  },
+]
 
 export const input = `                [B] [L]     [J]    
             [B] [Q] [R]     [D] [T]

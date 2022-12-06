@@ -1,8 +1,8 @@
-export const testData: {
-    input: string;
-    output: string;
-}[] = [
+import { TestData } from "src/shared"
+
+export const testData: TestData[] = [
   {
+    only: false,
     input: ``,
     output: "",
   },
