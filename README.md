@@ -31,3 +31,5 @@ Day       Time  Rank  Score       Time  Rank  Score
   2   00:20:05  8243      0   00:25:10  6520      0
   1   00:24:18  8917      0   00:29:50  8546      0
 ```
+
+> Day 7: start 14 mins late and give up part 1 after 2h 40mins (since release)
