@@ -34,11 +34,15 @@ export function answer(input: string): string {
     const size = getFolderSize(folder)
     // console.log('Size:', dir, size);
 
-    if (size <= 100_000) sizes[dir] = size
+    const desiredSize = 30_000_000 - (70_000_000 - getFolderSize(fileSystemTree))
+    if (size >= desiredSize) sizes[dir] = size
   })
   // console.log(sizes);
 
-  const result = sum(Object.values(sizes))
+  // Fuck good code, i just want the part 2 answer fast
+  const aaa = (Object.entries(sizes))
+  aaa.sort((a, b) => a[1] - b[1])
+  const result = aaa[0]?.[1] ?? 0
   return String(result)
 }
 
