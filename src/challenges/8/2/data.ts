@@ -24,6 +24,20 @@ export const testData: TestData[] = [
   },
   {
     // only: true,
+    input: `11
+11
+11`,
+    output: "0",
+  },
+  {
+    // only: true,
+    input: `111
+111
+111`,
+    output: "1",
+  },
+  {
+    // only: true,
     input: `55555
 55555
 55555
