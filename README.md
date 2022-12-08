@@ -40,3 +40,7 @@ Day       Time   Rank  Score       Time   Rank  Score
 I really spent 3h 8min, but started 17 mins late. (so actually 2h 51min)
 
 I used this [Reddit comment](https://www.reddit.com/r/adventofcode/comments/zeu8qq/comment/iz8jj7j/?utm_source=share&utm_medium=web2x&context=3) to fix my code after 2h 40min.
+
+### Day 8
+
+I give up after 1h 37min

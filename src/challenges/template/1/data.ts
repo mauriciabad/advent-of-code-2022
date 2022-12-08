@@ -2,7 +2,7 @@ import { TestData } from "src/shared"
 
 export const testData: TestData[] = [
   {
-    only: false,
+    // only: true,
     input: ``,
     output: "",
   },

@@ -26,8 +26,11 @@ export function run(answer: (input: string) => string, input: string, testData: 
     }
   })()
 
-  console.log('\nResult:')
-  console.log(answer(input))
+  const hasOnly = testData.some(test => test.only)
+  if (!hasOnly) {
+    console.log('\nResult:')
+    console.log(answer(input))
+  }
 }
 
 const makeLogMessage = (passes: boolean, result: string, output: string, i: number) => {
