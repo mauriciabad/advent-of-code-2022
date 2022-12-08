@@ -28,12 +28,17 @@ export function answer(input: string): string {
 }
 
 function scientificScore(tree: Tree, treeGrid: Tree[][]): number {
-  const treesOnLeftHeights = treeGrid[tree.y].slice(0, tree.x,).map(tree => tree.height)
-  const treesOnRightHeights = treeGrid[tree.y].slice(tree.x + 1, undefined).map(tree => tree.height).reverse()
-  const treesOnTopHeights = treeGrid.map(line => line[tree.x]).slice(0, tree.y).map(tree => tree.height)
-  const treesOnBottomHeights = treeGrid.map(line => line[tree.x]).slice(tree.y + 1, undefined).map(tree => tree.height).reverse()
+  const treesOnLeftHeights = treeGrid[tree.y].slice(0, tree.x,).map(tree => tree.height).reverse()
+  const treesOnRightHeights = treeGrid[tree.y].slice(tree.x + 1, undefined).map(tree => tree.height)
+  const treesOnTopHeights = treeGrid.map(line => line[tree.x]).slice(0, tree.y).map(tree => tree.height).reverse()
+  const treesOnBottomHeights = treeGrid.map(line => line[tree.x]).slice(tree.y + 1, undefined).map(tree => tree.height)
 
-  // console.log(tree.height, treesOnLeftHeights, visibleTrees(tree.height, treesOnLeftHeights));
+  // console.log('Tree:', tree)
+  // console.log('  ⬅️', visibleTrees(tree.height, treesOnLeftHeights), treesOnLeftHeights);
+  // console.log('  ➡️', visibleTrees(tree.height, treesOnRightHeights), treesOnRightHeights);
+  // console.log('  ⬆️', visibleTrees(tree.height, treesOnTopHeights), treesOnTopHeights);
+  // console.log('  ⬇️', visibleTrees(tree.height, treesOnBottomHeights), treesOnBottomHeights);
+  // console.log();
 
   return (
     visibleTrees(tree.height, treesOnLeftHeights) *

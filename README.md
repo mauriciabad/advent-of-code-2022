@@ -24,6 +24,7 @@ My username is `mauriciabad`
 ```txt
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+  8   01:03:03  10811      0   02:25:34  13674      0
   7   02:58:03  15363      0   03:08:47  14630      0
   6   00:14:26   8948      0   00:17:48   8745      0
   5   00:49:32   9692      0   00:53:53   8973      0
@@ -43,4 +44,4 @@ I used this [Reddit comment](https://www.reddit.com/r/adventofcode/comments/zeu8
 
 ### Day 8
 
-I give up after 1h 37min
+I give up after 1h 37min. I did a break, and then I figured out what was wrong.
