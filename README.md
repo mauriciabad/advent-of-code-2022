@@ -24,6 +24,7 @@ My username is `mauriciabad`
 ```txt
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+  9   01:25:41  10640      0   02:05:01   8677      0
   8   01:03:03  10811      0   02:25:34  13674      0
   7   02:58:03  15363      0   03:08:47  14630      0
   6   00:14:26   8948      0   00:17:48   8745      0
@@ -45,3 +46,12 @@ I used this [Reddit comment](https://www.reddit.com/r/adventofcode/comments/zeu8
 ### Day 8
 
 I give up after 1h 37min. I did a break, and then I figured out what was wrong.
+
+### Day 9
+
+Learnings:
+
+- have a paper and pen next to you
+- throwing for out-of-bound cases was very useful
+- It's just easier to test every individual case than to find patterns
+- Install the debugger!

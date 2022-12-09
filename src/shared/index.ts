@@ -15,7 +15,7 @@ export function run(answer: (input: string) => string, input: string, testData: 
   (() => {
     for (let i = 0; i < testData.length; i++) {
       if (!testData[i].only) continue
-      console.log(`\nTests: (Only #${i})`)
+      console.log(`\nTests: (Only #${i + 1})`)
       test(i)
       return
     }
@@ -34,7 +34,7 @@ export function run(answer: (input: string) => string, input: string, testData: 
 }
 
 const makeLogMessage = (passes: boolean, result: string, output: string, i: number) => {
-  return `${passes ? '✅️ Pass' : '❌️ Fail'} #${i} | ${passes ? `Answer "${cut(result)}"` : `Expected "${cut(output)}" got "${cut(result)}"`}`
+  return `${passes ? '✅️ Pass' : '❌️ Fail'} #${i + 1} | ${passes ? `Answer "${cut(result)}"` : `Expected "${cut(output)}" got "${cut(result)}"`}`
 }
 function cut(result: string) {
   const MAX_LENGTH = 30
