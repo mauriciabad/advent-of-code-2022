@@ -34,12 +34,19 @@ export function run(answer: (input: string) => string, input: string, testData: 
 }
 
 const makeLogMessage = (passes: boolean, result: string, output: string, i: number) => {
-  return `${passes ? '✅️ Pass' : '❌️ Fail'} #${i + 1} | ${passes ? `Answer "${cut(result)}"` : `Expected "${cut(output)}" got "${cut(result)}"`}`
+  return `${passes ? '✅️ Pass' : '❌️ Fail'} #${i + 1} | ${passes ? `Answer ${cut(result)}` : `Expected ${cut(output)}got ${cut(result)}`}`
 }
 function cut(result: string) {
-  const MAX_LENGTH = 30
-  if (result.length > MAX_LENGTH)
-    result = result.substring(0, MAX_LENGTH / 2) + '...' + result.substring(result.length - MAX_LENGTH / 2, result.length);
-  return result;
+  if (result.includes('\n')) {
+    return `\n${result}\n\n`
+  }
+
+  const MAX_LENGTH = 60
+  if (result.length > MAX_LENGTH && !result.includes('.')) {
+    return `"${result.substring(0, MAX_LENGTH / 2)}...${result.substring(result.length - MAX_LENGTH / 2, result.length)}" `;
+  }
+
+  return `"${result}" `
+
 }
 
